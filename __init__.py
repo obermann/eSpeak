@@ -31,7 +31,7 @@ import eg
 eg.RegisterPlugin(
     name = "eSpeak",
     author = "obermann",
-    version = "1.48.15",
+    version = "1.48.15.01",
     kind = "program",
     canMultiLoad = False,
     description = __doc__,
