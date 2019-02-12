@@ -471,7 +471,7 @@ class GetParameter(eg.ActionBase):
     
     def __call__(self, type, default=False):
         if not self.plugin.is_off() and PARAMETERS.search(type.capitalize()): 
-            return self.plugin.espeak_GetParameter(PARAMETERS.search(type.capitalize()), int(default))
+            return self.plugin.espeak_GetParameter(PARAMETERS.search(type.capitalize()), int(not default))
 
             
     def Configure(self, type="Ignore", default=False):
